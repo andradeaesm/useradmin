@@ -27,7 +27,7 @@ Em app - http - middleware entrar em CheckAdmin</br>
 adicionar o use Auth;</br>
 Reconstruir a função handle existente</br>
 antes do return</br>
-$userRoles = Auth::User()->roles->pluck(‘nome’);</br>
+$userRoles = Auth::User()->roles->pluck(‘roleName’);</br>
 if ( ! $userRoles->contains(‘admin’)){</br>
 return redirect(‘\home’);</br>
 }</p>
