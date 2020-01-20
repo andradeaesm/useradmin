@@ -14,12 +14,12 @@ $table->foreign(‘user_id’)->references(‘id’)->on(‘users’)->onCascade
 <h2>No model User criar a função roles</h2>
 <p>public function roles()</br>
 {</br>
-return $this->belongsToMany(‘App\User’);</br>
+return $this->belongsToMany(‘App\Role’);</br>
 }</p>
 <h2>No model Role criar a função users</h2>
 <p>public function users()</br>
 {</br>
-return $this->belongsToMany(‘App\Roler’);</br>
+return $this->belongsToMany(‘App\User’);</br>
 }</p>
 <h2>Criar um novo midleware para o admin</h2
 <p>php artisan make:middleware CheckAdmin</br>
