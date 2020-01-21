@@ -9,7 +9,7 @@ criar os campos role_id e user_id</br>
 $table->biginteger(‘role_id’)->unsigned();</br>
 $table->biginteger(‘user_id’)->unsigned();</br>
 criar as foreign-key</br>
-$table->foreign(‘role_id’)->references(‘id’)->on(‘rules’)->onCascade(‘delete’);</br>
+$table->foreign(‘role_id’)->references(‘id’)->on(‘roles’)->onCascade(‘delete’);</br>
 $table->foreign(‘user_id’)->references(‘id’)->on(‘users’)->onCascade(‘delete’);</p>
 <h2>No model User criar a função roles</h2>
 <p>public function roles()</br>
