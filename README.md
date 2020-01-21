@@ -32,7 +32,7 @@ antes do return</br>
 if ( ! $userRoles->contains(‘admin’)){</br>
 return redirect(‘\home’);</br>
 }</i></b></p>
-<h2>nas routes adinionar novo reout group midleware para admin a envelver a route \admin</h2>
+<h2>nas routes adinionar novo route group midleware para admin a envelver a route \admin</h2>
 <h2>Abrir o kernel.php em app - http</h2>
 <p>em protected $routeMiddleware adicionar no final do array</br>
 <b><i>‘admin’ => \App\Http\Middleware\CheckAdmin::class,</i></b></p>
