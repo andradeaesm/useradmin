@@ -13,10 +13,10 @@ criar as foreign-key</br>
 <b><i>$table->foreign(‘role_id’)->references(‘id’)->on(‘roles’)->onCascade(‘delete’);</br>
 $table->foreign(‘user_id’)->references(‘id’)->on(‘users’)->onCascade(‘delete’);</b></i></p>
 <h2>No model User criar a função roles</h2>
-<p>public function roles()</br>
+<p><b><i>public function roles()</br>
 {</br>
 return $this->belongsToMany(‘App\Role’);</br>
-}</p>
+}</i></b></p>
 <h2>No model Role criar a função users</h2>
 <p><b><i>public function users()</br>
 {</br>
