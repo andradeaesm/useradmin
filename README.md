@@ -4,14 +4,14 @@
 <p>Na migration adicionar o campo roleName</p>
 <p><b><i>$table->string('roleName');</i></b></p>
 <h2>Criar uma migration para relacionar User - Role</h2>
-<p>php artisan make:migration create_role_user_table --create=role_user</p>
+<p><b><i>php artisan make:migration create_role_user_table --create=role_user</i></b></p>
 <p>na migration eliminar os campos id e timestamps criados automaticamente</br>
 criar os campos role_id e user_id</br>
-$table->biginteger(‘role_id’)->unsigned();</br>
-$table->biginteger(‘user_id’)->unsigned();</br>
+<b><i>$table->biginteger(‘role_id’)->unsigned();</br>
+$table->biginteger(‘user_id’)->unsigned();</b></i></br>
 criar as foreign-key</br>
-$table->foreign(‘role_id’)->references(‘id’)->on(‘roles’)->onCascade(‘delete’);</br>
-$table->foreign(‘user_id’)->references(‘id’)->on(‘users’)->onCascade(‘delete’);</p>
+<b><i>$table->foreign(‘role_id’)->references(‘id’)->on(‘roles’)->onCascade(‘delete’);</br>
+$table->foreign(‘user_id’)->references(‘id’)->on(‘users’)->onCascade(‘delete’);</b></i></p>
 <h2>No model User criar a função roles</h2>
 <p>public function roles()</br>
 {</br>
