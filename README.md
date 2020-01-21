@@ -1,7 +1,8 @@
 <h1>Passos</h1>
 <h2>Criar model Role com migration</h2>
-<p>php artisan make:model Role -m</p>
+<p><i><b>php artisan make:model Role -m</b></i></p>
 <p>Na migration adicionar o campo roleName</p>
+<p><b><i>$table->string('roleName');</i></b></p>
 <h2>Criar uma migration para relacionar User - Role</h2>
 <p>php artisan make:migration create_role_user_table --create=role_user</p>
 <p>na migration eliminar os campos id e timestamps criados automaticamente</br>
